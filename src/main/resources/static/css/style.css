@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", sans-serif;
+}
+
+h1 {
+    font-family: "Verdana", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+
+    text-align: center;
+    color: #000000;
+}
