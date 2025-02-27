@@ -15,6 +15,7 @@ public class HandyGibberishIfierApplication {
 		SpringApplication.run(HandyGibberishIfierApplication.class, args);
 	}
 
+	// Page loads index.html at start
 	@GetMapping
 	public String displayPage() {
 		return "index";
