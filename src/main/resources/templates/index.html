@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <title>Handy Gibberish-ifier</title>
 </head>
-
+<body>
 <h1>
     Handy Gibberish-ifier
 </h1>
-    <body>
-    Hello World.
-    </body>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Encrypt')">Encrypt</button>
+    <button class="tablinks" onclick="openTab(event, 'Decrypt')">Decrypt</button>
+</div>
+
+
+<div id="Encrypt" class="tabcontent">
+    <h3>Encrypt</h3>
+    <label for="encryptInput">Enter text to encrypt below:</label>
+    <textarea id="encryptInput" rows="4" cols="50"></textarea>
+    <button onclick="encryptText()">Encrypt</button>
+    <label for="encryptOutput">Encrypted text:</label>
+    <textarea id="encryptOutput" rows="4" cols="50" readonly></textarea>
+</div>
+
+<div id="Decrypt" class="tabcontent" style="display:none;">
+    <h3>Decrypt</h3>
+    <label for="decryptInput">Enter text to decrypt below:</label>
+    <textarea id="decryptInput" rows="4" cols="50"></textarea>
+    <button onclick="decryptText()">Decrypt</button>
+    <label for="decryptOutput">Decrypted text:</label>
+    <textarea id="decryptOutput" rows="4" cols="50" readonly></textarea>
+</div>
+
+
+</body>
+
+<script src="/js/tabs.js"></script>
 </html>
