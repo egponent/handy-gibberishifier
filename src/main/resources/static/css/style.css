@@ -9,6 +9,7 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #cccccc;
 }
 
 h1 {
@@ -35,6 +36,7 @@ h1 {
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
+    color: #000;
     border-radius: 4px;
 }
 
