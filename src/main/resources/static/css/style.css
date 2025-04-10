@@ -86,6 +86,17 @@ textarea.output {
     background-color: #f8f8f8;
 }
 
+/* Select styling */
+select {
+    display: block; /* Makes the select element take up the full width of its container */
+    width: 100%;
+    padding: 10px; /* Adds some space inside the select box */
+    margin-bottom: 15px; /* Creates space below the select box */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 4px; /* Rounds the corners of the select box */
+    font-size: 14px; /* Sets the font size to match other form elements */
+}
+
 button {
     display: block;
     padding: 10px 20px;

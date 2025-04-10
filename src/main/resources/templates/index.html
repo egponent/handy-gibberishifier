@@ -16,30 +16,46 @@
 
 <!--Tab Buttons-->
 <div class="tabs">
-    <button class="tablinks" onclick="openTab(event, 'Encrypt')">Encrypt</button>
-    <button class="tablinks" onclick="openTab(event, 'Decrypt')">Decrypt</button>
+    <button class="tablinks" onclick="openTab(event, 'Encrypt')">Encryption</button>
+    <button class="tablinks" onclick="openTab(event, 'Decrypt')">Decryption</button>
 </div>
 
 <!--Encrypt Tab Contents-->
 <div id="Encrypt" class="tabcontent">
-    <h3>Encrypt</h3>
     <label for="encryptInput">Enter text to encrypt below:</label>
     <textarea id="encryptInput" rows="4" cols="50"></textarea>
+
+    <label for="decryptAlg">Choose encryption standard:</label>
+    <select id="decryptAlg">
+        <option value="AES128">AES-128 bit</option>
+        <option value="AES256">AES-256 bit</option>
+    </select>
+
     <label for="encryptKey">Enter encryption key below:</label>
     <textarea id="encryptKey" rows="4" cols="50"></textarea>
+
     <button onclick="encryptText()">Encrypt</button>
+
     <label for="encryptOutput">Encrypted text:</label>
     <textarea id="encryptOutput" rows="4" cols="50" readonly></textarea>
 </div>
 
 <!--Decrypt Tab Contents-->
 <div id="Decrypt" class="tabcontent" style="display:none;">
-    <h3>Decrypt</h3>
     <label for="decryptInput">Enter text to decrypt below:</label>
     <textarea id="decryptInput" rows="4" cols="50"></textarea>
+
+    <label for="decryptAlg">Choose encryption standard:</label>
+    <select id="decryptAlg">
+        <option value="AES128">AES-128 bit</option>
+        <option value="AES256">AES-256 bit</option>
+    </select>
+
     <label for="decryptKey">Enter decryption key below:</label>
     <textarea id="decryptKey" rows="4" cols="50"></textarea>
+
     <button onclick="decryptText()">Decrypt</button>
+
     <label for="decryptOutput">Decrypted text:</label>
     <textarea id="decryptOutput" rows="4" cols="50" readonly></textarea>
 </div>
