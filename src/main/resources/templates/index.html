@@ -8,6 +8,8 @@
 
 <!--Linked tabs script-->
 <script src="/js/tabs.js"></script>
+<!--Linked encryption script-->
+<script src="/js/crypt.js"></script>
 
 <body>
 <h1>
@@ -29,6 +31,8 @@
     <select id="encryptAlg">
         <option value="AES128">AES-128 bit</option>
         <option value="AES256">AES-256 bit</option>
+        <option value="BLOWFISH">Blowfish</option>
+        <option value="TRIPLEDES">Triple DES</option>
     </select>
 
     <label for="encryptKey">Enter encryption key below:</label>
@@ -49,6 +53,8 @@
     <select id="decryptAlg">
         <option value="AES128">AES-128 bit</option>
         <option value="AES256">AES-256 bit</option>
+        <option value="BLOWFISH">Blowfish</option>
+        <option value="TRIPLEDES">Triple DES</option>
     </select>
 
     <label for="decryptKey">Enter decryption key below:</label>
